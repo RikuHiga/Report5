@@ -61,6 +61,11 @@ public class LivingThings {
         }
     }
 
+    /**
+     * ダメージ計算と死亡判定を行うメソッド。
+     * hitPointからdamageを減算し、ダメージ計算を行う。また、hitPointが0未満になった場合、死亡したとみなし死亡処理を行う。
+     * @param damage 与えられたダメージ量
+     */
     public void wounded(int damage){
         hitPoint -= damage;
         if( hitPoint < 0 ) {
